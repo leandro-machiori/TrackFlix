@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TrackFlix</string>
+    <string name="AddFil">ADICIONAR FILME/SÉRIE</string>
+    <string name="Titulo">TrackFlix</string>
+    <string name="nOME">Titulo</string>
+    <string name="status">Status</string>
+    <string name="nota">Nota</string>
+    <string name="comentario">Comentario</string>
+    <string name="Salvra">SALVAR</string>
+    <string name="SELECIONAR_IMAGEM">SELECIONAR IMAGEM</string>
+    <string name="Ecluir">EXCLUIR ITEM</string>
+    <string name="Finalizar">FINALIZAR</string>
+    <string name="btn">VOLTAR</string>
+
+    <string-array name="status_array">
+        <item>Selecione um Status</item>
+        <item>Assistido</item>
+        <item>Pendente</item>
+        <item>Assistindo</item>
+    </string-array>
+
+</resources>

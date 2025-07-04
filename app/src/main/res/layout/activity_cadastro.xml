@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:background="@color/gray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Titulo"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgCapa"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSelecionarImagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/black"
+            android:text="@string/SELECIONAR_IMAGEM" />
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:layout_width="380dp"
+            android:layout_height="48dp"
+            android:textColorHint="@color/black"
+            android:background="@android:drawable/editbox_background_normal"
+
+            android:hint="@string/nOME"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtNota"
+            android:layout_width="380dp"
+            android:layout_height="48dp"
+            android:textColorHint="@color/black"
+            android:background="@android:drawable/editbox_background_normal"
+
+            android:hint="@string/nota"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spnStatus"
+            android:layout_width="380dp"
+            android:layout_height="48dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtComentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/comentario"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginTop="8dp"
+            android:lines="3"
+            android:textColorHint="@color/black"
+            android:gravity="top" />
+
+        <LinearLayout
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="150dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:text="@string/Salvra"
+                android:textColor="@color/black">
+            </Button>
+            <Button
+                android:id="@+id/btnVoltarCadastro"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/red"
+                android:text="@string/btn"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
