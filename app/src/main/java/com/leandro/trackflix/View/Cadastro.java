@@ -79,26 +79,30 @@ public class Cadastro extends AppCompatActivity {
             String status = spnStatus.getSelectedItem().toString();
             String comentario = edtComentario.getText().toString().trim();
             String notaStr = edtNota.getText().toString().trim();
+            // Validação: título e status obrigatórios
             if (titulo.isEmpty()) {
                 Toast.makeText(this, "Preencha o título.", Toast.LENGTH_SHORT).show();
                 return;
             }
-            // Validação da nota obrigatória apenas se o status for diferente de "Pendente"
+            if (spnStatus.getSelectedItemPosition() == 0) { // Se a primeira opção estiver selecionada
+                Toast.makeText(this, "Selecione um status válido.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if (!status.equalsIgnoreCase("Pendente") && notaStr.isEmpty()) { // Nota obrigatória se não for pendente
+                Toast.makeText(this, "Preencha a nota.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if (imagemSelecionada == null) {
+                imagemSelecionada = Uri.parse("android.resource://" + getPackageName() + "/" + R.drawable.trackflix3);
+            }
             float nota = 0f;
-            if (!status.equalsIgnoreCase("Pendente")) {
-                if (notaStr.isEmpty()) {
-                    Toast.makeText(this, "Preencha a nota ou selecione 'Pendente'.", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+            if (!notaStr.isEmpty()) {
                 try {
                     nota = Float.parseFloat(notaStr);
                 } catch (NumberFormatException e) {
                     Toast.makeText(this, "Nota inválida.", Toast.LENGTH_SHORT).show();
                     return;
                 }
-            }
-            if (imagemSelecionada == null) {
-                imagemSelecionada = Uri.parse("android.resource://" + getPackageName() + "/" + R.drawable.trackflix3);
             }
             if (itemParaEditar != null) {
                 itemParaEditar.setTitulo(titulo);
@@ -115,6 +119,7 @@ public class Cadastro extends AppCompatActivity {
                 item.setComentario(comentario);
                 item.setImagemUri(imagemSelecionada.toString());
                 item.setNota(nota);
+
                 controller.adicionarItem(item);
                 Toast.makeText(this, "Item salvo com sucesso!", Toast.LENGTH_SHORT).show();
             }

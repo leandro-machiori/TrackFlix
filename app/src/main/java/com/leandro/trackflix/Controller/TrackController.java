@@ -31,7 +31,6 @@ public class TrackController {
         values.put("status", item.getStatus());
         values.put("comentario", item.getComentario());
         values.put("nota", item.getNota());
-
         db.insert("trackflix", null, values);
         db.close();
     }

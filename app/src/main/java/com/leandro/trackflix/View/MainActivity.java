@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     private void carregarLista() {
         List<TrackFlix> lista = controller.listarItens();
         adapter = new FlixAdapter(this, lista);
-        controller.setAdapter(adapter); // Caso queira controlar o adapter via Controller no futuro
+        controller.setAdapter(adapter); // Caso queira controlar o adapter via Controller
         listView.setAdapter(adapter);
     }
 }

@@ -5,14 +5,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
 import com.leandro.trackflix.Model.TrackFlix;
-import com.leandro.trackflix.View.MainActivity;
 
 public class TrackFlixDBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "trackflix.db";
     private static final int DATABASE_VERSION = 2;
-    // Criação da tabela filmes
+    // Criação da tabela trackflix
     private static final String TABLE_CREATE =
             "CREATE TABLE tracflix (" +
                     "id INTEGER PRIMARY KEY AUTOINCREMENT, " +

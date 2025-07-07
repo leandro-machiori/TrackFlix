@@ -41,7 +41,6 @@
             android:id="@+id/edtTitulo"
             android:layout_width="380dp"
             android:layout_height="48dp"
-            android:textColorHint="@color/black"
             android:background="@android:drawable/editbox_background_normal"
 
             android:hint="@string/nOME"
@@ -51,9 +50,7 @@
             android:id="@+id/edtNota"
             android:layout_width="380dp"
             android:layout_height="48dp"
-            android:textColorHint="@color/black"
             android:background="@android:drawable/editbox_background_normal"
-
             android:hint="@string/nota"
             android:inputType="numberDecimal"
             android:layout_marginTop="8dp" />
@@ -73,7 +70,6 @@
             android:background="@android:drawable/editbox_background_normal"
             android:layout_marginTop="8dp"
             android:lines="3"
-            android:textColorHint="@color/black"
             android:gravity="top" />
 
         <LinearLayout
