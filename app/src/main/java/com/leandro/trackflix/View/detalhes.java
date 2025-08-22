@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.leandro.trackflix.Controller.FilmeApiController;
 import com.leandro.trackflix.Controller.TrackController;
 import com.leandro.trackflix.Model.TrackFlix;
 import com.leandro.trackflix.R;
@@ -55,6 +57,7 @@ public class detalhes extends AppCompatActivity {
         });
 
         btnVoltarDetalhe.setOnClickListener(v -> finish());
+
     }
     private void carregarDetalhes() {
         List<TrackFlix> lista = controller.listarItens();

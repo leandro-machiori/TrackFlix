@@ -29,6 +29,22 @@
             android:background="@color/white"
             android:layout_marginBottom="8dp" />
 
+        <EditText
+            android:id="@+id/urlEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:hint="@string/cole"
+            android:inputType="textUri" />
+
+        <Button
+            android:id="@+id/btnBuscarCapaUrl"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="@string/Carregar" />
+
         <Button
             android:id="@+id/btnSelecionarImagem"
             android:layout_width="match_parent"
@@ -42,7 +58,6 @@
             android:layout_width="380dp"
             android:layout_height="48dp"
             android:background="@android:drawable/editbox_background_normal"
-
             android:hint="@string/nOME"
             android:layout_marginTop="8dp" />
 

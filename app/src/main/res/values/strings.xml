@@ -11,6 +11,8 @@
     <string name="Ecluir">EXCLUIR ITEM</string>
     <string name="Finalizar">FINALIZAR</string>
     <string name="btn">VOLTAR</string>
+    <string name="Carregar">CARREGAR URL</string>
+    <string name="cole">Cole a URL da imagem aqui</string>
 
     <string-array name="status_array">
         <item>Selecione um Status</item>

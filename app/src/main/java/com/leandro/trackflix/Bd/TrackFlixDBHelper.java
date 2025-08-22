@@ -12,7 +12,7 @@ public class TrackFlixDBHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 2;
     // Criação da tabela trackflix
     private static final String TABLE_CREATE =
-            "CREATE TABLE tracflix (" +
+            "CREATE TABLE trackflix (" +
                     "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     "titulo TEXT NOT NULL, " +
                     "imagemUri TEXT, " +
